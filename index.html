@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+    <div id="container">
+        <input id="input" type="text" required/>
+        <div id="operators">
+            <button id="addition" onclick="addition()"><i class="fa-solid fa-plus"></i></button>
+            <button id="subtraction" onclick="subtract()"><i class="fa-solid fa-minus"></i></button>
+            <button id="multiplication" onclick="multi()"><i class="fa-solid fa-xmark"></i></button>
+            <button id="division" onclick="divi()"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div id="numbers">
+            <button onclick="input.value+='9'">9</button>
+            <button onclick="input.value+='8'">8</button>
+            <button onclick="input.value+='7'">7</button>
+            <button onclick="input.value+='6'">6</button>
+            <button onclick="input.value+='5'">5</button>
+            <button onclick="input.value+='4'">4</button>
+            <button onclick="input.value+='3'">3</button>
+            <button onclick="input.value+='2'">2</button>
+            <button onclick="input.value+='1'">1</button>
+            <button onclick="input.value+='0'">0</button>
+            <button onclick="input.value='.'">.<i class="fa-light fa-period"></i></button>
+        </div>
+        <div>
+        <button id="delete" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+        <button id="clear" type="reset" onclick="cls()">Clr</button>
+        <button id="equalsto" onclick="eql()""><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</center>
+</body>
+</html>
